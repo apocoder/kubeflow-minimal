@@ -1,0 +1,54 @@
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+.terraform.lock.hcl
+crash.log
+crash.*.log
+terraform.tfvars
+*.tfvars.json
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Kubernetes / kubeconfigs
+.kube/
+*.kubeconfig
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+*.ipynb_checkpoints
+
+# Kubeflow Pipelines artifacts (generated)
+pipelines/*.json
+
+# Env files / secrets
+.env
+.env.*
+*.secret
+*.key
+
+# Logs
+*.log
+
+# Editors / OS
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Archives / misc
+*.zip
+*.tar
+*.tar.gz
+*.bak
+*.backup
