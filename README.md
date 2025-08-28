@@ -1,4 +1,4 @@
-# Kubeflow Pipelines (Minimal) on GCP with Terraform
+# Kubernetes ortamında Kubeflow (AI) Pipelines (KFP v2) Kurulumu
 
 Minimal bir örnek: **Terraform → GKE (VPC-native) → Kubeflow Pipelines Standalone (KFP v2)**.
 
