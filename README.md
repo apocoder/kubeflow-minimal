@@ -56,20 +56,7 @@ kubectl -n kubeflow port-forward svc/ml-pipeline-ui 8080:80
 
 ---
 
-## 3) Örnek Pipeline'ı derleyip yükleyin
 
-Yerelde gerekli Python paketlerini kurun ve derleyin:
-```bash
-python -m venv .venv && source .venv/bin/activate
-pip install -r pipelines/requirements.txt
-
-python pipelines/btc_sma_pipeline.py  # pipelines/btc_sma_pipeline.json oluşur
-```
-
-KFP UI'da **Upload pipeline** deyip `pipelines/btc_sma_pipeline.json` dosyasını yükleyin.  
-Ardından **Create run** ile `days=10, window=24` gibi parametrelerle çalıştırabilirsiniz.
-
----
 
 ## Temizlik
 ```bash
