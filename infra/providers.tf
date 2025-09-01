@@ -1,8 +1,11 @@
 terraform {
-  required_version = ">= 1.6"
+  # Terraform CLI 1.5.x ile uyumlu
+  required_version = ">= 1.5.0, < 2.0.0"
+
   required_providers {
     google = {
-      source  = "hashicorp/google"
+      source = "hashicorp/google"
+      # 1.5.x ile sorunsuz 5.x serisine pinliyoruz
       version = "~> 5.40"
     }
   }
